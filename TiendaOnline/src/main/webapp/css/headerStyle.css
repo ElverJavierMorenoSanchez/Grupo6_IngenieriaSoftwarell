@@ -1,0 +1,344 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo span{
+    color: #ff0156;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+    margin-right: 100px;
+}
+header .navigation li{
+    list-style: none;
+    margin-right: 30px;
+    transition: .5s;
+    font-size: 1.08em;
+}
+header .navigation li:hover{
+    transform: translateY(-5px);
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: 0.3s;
+}
+header.sticky .navigation li a{
+    color: #111;
+    transition: 0.5s;
+}
+header .navigation li a:hover{
+    color: #F73375;
+}
+header.sticky .shoppingCart .icon,
+header.sticky .shoppingCart .cont
+{
+    color: #111;
+    transition: 0.5s;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+    user-select: none;
+    cursor: pointer;
+}
+.singIn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.buttonLogin{
+    font-size: 1em;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.singIn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px 6px #FD97B9;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+.shoppingCart{
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    align-items: center;
+    margin-left: 68%;
+    user-select: none;
+}
+.shoppingCart a {
+    width: 100%;
+    height: 100%;
+}
+.shoppingCart .icon{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    transition: 0.3s;
+}
+.shoppingCart .cont{
+    font-size: 1.25em;
+    padding-left: 3px;
+    text-align: center;
+    transition: 0.3s;
+    margin-left: 30px;
+    margin-top: 5px;
+    color: white;
+}
+.shoppingCart .cartOptions{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    margin-top: 5px;
+    margin-left: -590%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+    border: 2px solid #000;
+    background: #fff;
+}
+.shoppingCart .totalCash{
+    position: relative;
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.shoppingCart .totalCash h2{
+    font-weight: 400;
+}
+.shoppingCart .checkIn{
+    position: relative;
+    width: 75%;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    padding: 0;
+    margin-top: 0;
+}
+.shoppingCart .checkIn h3{
+    text-align: center;
+}
+.shoppingCart #shopping-cart-container{
+    width: 100%
+}
+
+.shoppingCart .item{
+    border-bottom: solid 2px;
+    padding: 5px;
+}
+.shoppingCart .item .title{
+    font-weight: bold;
+}
+.shoppingCart .item .price{
+    font-weight: bold;
+}
+.shoppingCart .item .total{
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.shoppingCart .item .info{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.shoppingCart .item .info .actions{
+    padding-right: 10px; 
+}
+.shoppingCart .item .info .actions button{
+    color: #fff;
+    background: #ff0157;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.shoppingCart .item .info .actions button:hover{
+    color: #000;
+    background: #fff;
+}
+.navigationUser{
+    position: absolute;
+    top: 34px;
+    right: 105px;
+    width: 120px;
+    height: 60px;
+    background: rgba(255,255,255,0);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.3s, width 0.3s, transform 0.5s;
+    transition-delay: 0s,0.45s;
+    overflow: hidden;
+    visibility: visible;
+}
+.navigationUser.active{
+    width: 300px;
+    height: 340px;
+    background: rgba(255,255,255,1);
+    transition: width 0.3s, height 0.3s, transform 0.5s;
+    transition-delay: 0s,0.45s;
+}
+.navigationUser .userBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+.navigationUser.active .userBx{
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+}
+.navigationUser .userBx .username{
+    white-space: nowrap;
+    color: #555;
+    font-size: 1.1em;
+}
+.navigationUser .userBx .imgBx{
+    position: relative;
+    background: #ff0157;
+    min-width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.navigationUser .userBx .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigationUser .menuToggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigationUser .menuToggle::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #ff0156;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #ff0156;
+    transition: 0.5s;
+}
+.navigationUser .menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #ff0156;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+.navigationUser.active .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #ff0156;
+}
+.navigationUser.active .menuToggle::after{
+    transform: translateY(0px) rotate(-45deg);
+}
+.menu {
+    position: absolute;
+    height: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.menu li {
+    list-style: none;
+}
+.menu li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 1em;
+    text-decoration: none;
+    color: #555;
+}
+.menu li a:hover{
+    color: #ff0156;
+}
+.menu li a ion-icon{
+    font-size: 1.5em;
+
+}
+
+header.sticky .shoppingCart:hover .icon,
+.shoppingCart:hover .icon
+{
+    transform: translateY(-5px);
+    color: #ff0157;
+}
+header.sticky .singIn:hover{
+    box-shadow: 0px 0px 10px 6px #535353;
+}
+header.sticky .shoppingCart:hover .cartOptions,
+.shoppingCart:hover .cartOptions{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(5px);
+}
+header.sticky .navigationUser{
+    transform: translateY(-30px);
+}

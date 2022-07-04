@@ -1,0 +1,127 @@
+/* 
+    Created on : 29-may-2022, 14:52:32
+    Author     : Javier Snz
+*/
+footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 100px;
+	background: #111;
+	display: flex;
+	flex-wrap: wrap;
+}
+footer .container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+footer .container .sec{
+	margin-right: 30px;
+
+}
+footer .container .sec.aboutUs{
+	width: 40%;
+}
+footer .container h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+footer .container h2:before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #ff0156;
+}
+footer p{
+	color: #999;
+}
+footer .container .sec.aboutUs ul{
+	color: #999;
+}
+.sci{
+	margin-top: 20px;
+	display: flex;
+}
+.sci li{
+	list-style: none;
+}
+.sci li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.sci li a:hover{
+	background: #ff0156;
+}
+.sci li a .icon{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.sci li a .icon ion-icon{
+	padding-top: 8px;
+}
+.quickLinks{
+	position: relative;
+	width: 25%;
+}
+.quickLinks ul li{
+	list-style: none;
+}
+.quickLinks ul li a{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quickLinks ul li a:hover{
+	color: #fff;
+}
+.contactFooter{
+	width: calc(35% - 60px);
+	margin-right: 0 !important;
+}
+.contactFooter .info{
+	position: relative;
+}
+.contactFooter .info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+.contactFooter .info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contactFooter .info li a{
+	text-decoration: none;
+	color: #999;
+}
+.contactFooter .info li a:hover{
+	color: #fff;
+}
+.copyrighText{
+	width: 100%;
+	background: #181818;
+	padding: 8px 100px;
+	text-align: center;
+}
+.copyrighText p{
+    color: #999;
+}

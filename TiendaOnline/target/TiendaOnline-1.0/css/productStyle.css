@@ -1,0 +1,129 @@
+/* 
+    Created on : 29-may-2022, 14:54:41
+    Author     : Javier Snz
+*/
+#header{
+    width: 100%;
+    height: 128px;
+    background: url(../img/bg/bg5.jpg);
+}
+section {
+    padding: 70px 100px 100px;
+}
+.products h2{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 3em;
+}
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 400;
+}
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+.productsList .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.productsList .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .08);
+}
+
+.productsList .content .box .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.productsList .content .box .text{
+    padding: 15px 0 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.productsList .content .box .text h2{
+    font-weight: 400;
+    color: #111;
+}
+.productsList .content .box .text h3.description{
+    font-weight: 300;
+    color: #111;
+    font-size: 1em;
+}
+.productsList .content .box .text h3.price{
+    font-weight: 500;
+    color: #D08F48;
+    font-size: 1.3em;
+}
+.productsList .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.productsList .optionCart{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    align-items: left;
+}
+.productsList .optionCart .button{
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 73%;
+    width: 90%;
+    height: 60px;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.productsList .optionCart .button span{
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+.productsList .optionCart .button h3{
+    font-weight: 400;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    user-select: none;
+}
+.productsList .optionCart:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.productsList .optionCart:hover .button{
+    opacity: 1;
+}
+.productsList .optionCart .button:hover{
+    background: #ff0157;
+}
+.productsList .optionCart .button:hover h3,
+.productsList .optionCart .button:hover span
+{
+    color: #fff;
+    ;
+}

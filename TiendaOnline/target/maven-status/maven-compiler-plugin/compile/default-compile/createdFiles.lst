@@ -1,0 +1,13 @@
+Model\Product.class
+ConnectionDB\ConnectionMongoDB.class
+ModelDAO\ProductDAO.class
+com\tiendaonline\JakartaRestConfiguration.class
+ModelDAO\ValidationDAO.class
+Interfaces\ValidationCrud.class
+Interfaces\ProductCrud.class
+Controller\Controlador.class
+Model\User.class
+Interfaces\UserCrud.class
+com\tiendaonline\resources\JakartaEE8Resource.class
+Model\AuxUser.class
+ModelDAO\UserDAO.class
